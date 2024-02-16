@@ -5,4 +5,5 @@ import react from '@vitejs/plugin-react'
 export default defineConfig({
   base:"/pokedex/",
   plugins: [react()],
+  base:"./PokeDex-master/"
 })
