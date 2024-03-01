@@ -18,27 +18,31 @@ function PokemonDetails({ pokemonName }) {
                 Pokedex
             </Link>
         </h1>
-        {pokemon && <div className='pokemon-details-wrapper'>
-            <div className='pokemon-detail-name'>
-                {pokemon.name}
-            </div>
-            <div className='pokemon-image'>
-                <img src={pokemon.image} />
-            </div>
-            <div className='pokemon-attr'>
-                <div>
-                    height: {pokemon.height}
+        <div className="centered-container">
+  {pokemon && (
+    <div className='pokemon-details-wrapper card-light'>
+      <div className='pokemon-detail-name'>
+        {pokemon.name}
+      </div>
+      <div className='pokemon-image'>
+        <img src={pokemon.image} alt={pokemon.name} />
+      </div>
+      <div className='pokemon-attr'>
+        <div>
+          height: {pokemon.height}
+        </div>
+        <div>
+          weight: {pokemon.weight}
+        </div>
+      </div>
+      <div className='pokemon-types'>
+        <h1>Type:</h1> {pokemon.types.map(t => <span className='type' key={t.type.name}>{t.type.name}</span>)}
+      </div>
+    </div>
+  )}
+</div>
 
-                </div>
-                <div>
-                weight: {pokemon.weight}
 
-                </div>
-            </div>
-            <div className='pokemon-types'>
-                <h1>Type:</h1> {pokemon.types.map(t => <span className='type' key={t.type.name}>{t.type.name}</span>)}
-            </div>
-        </div>}
         <div className='similar-pokemons'>
             <h2> Similar pokemons </h2>
             <div className='pokemon-similar-boxes'>

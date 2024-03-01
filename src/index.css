@@ -1,3 +1,23 @@
 body {
-    background-color: blanchedalmond;
+   
+    cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32"><circle cx="16" cy="16" r="12" fill="red" stroke="black" stroke-width="2"/></svg>'), auto;
+      
+      
+    background: rgb(10,9,52);
+    background: radial-gradient(circle, rgba(10,9,52,1) 24%, rgba(238,174,202,1) 50%, rgba(10,9,52,1) 61%);
+color: white;
 }
+a {
+    transition: transform 0.3s ease;
+  }
+  
+  a:hover {
+    transform: scale(1.2);
+  }
+  body.default-cursor {
+    cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32"><circle cx="16" cy="16" r="12" fill="red" stroke="black" stroke-width="2"/></svg>'), auto;
+  }
+  
+  body.pointer-cursor {
+    cursor: pointer;
+  }

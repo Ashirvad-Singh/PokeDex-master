@@ -1,5 +1,17 @@
+/* Search.css */
+
 #search-pokemon {
     width: 50%;
-    padding: 2rem;
+    padding: 1rem;
     margin-top: 1rem;
+    background-color: #ecedf3; /* Blue background color */
+    color: #fff; /* Light text color */
+    border: 1px solid #3498db; /* Border color */
+    border-radius: 10px; /* Rounded corners */
+    color: #090941;
+    font-size: larger;
+}
+
+#search-pokemon::placeholder {
+    color: #080505; /* Placeholder text color */
 }

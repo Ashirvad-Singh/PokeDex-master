@@ -5,6 +5,7 @@
     color: black;
 }
 .pokemon {
+    color: white;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -14,11 +15,14 @@
     margin-top: 4rem;
     border: 1px solid black;
     border-radius: 10px;
-    background-color: bisque;
+    background-color: hsl(242, 79%, 7%);
 }
 
 .pokemon:hover {
-    background-color: burlywood;
+    background-color: rgb(227, 238, 238);
+   
+    color: black;
+    transition: 1s;
 }
 
 .pokemon-image {
