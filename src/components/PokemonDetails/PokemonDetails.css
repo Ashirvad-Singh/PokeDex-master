@@ -10,6 +10,9 @@
     gap: 2rem;
 
 }
+.pokedex-redirect Link{
+    color: white;
+}
 .pokemon-card {
     background: radial-gradient(circle, rgba(238,174,202,1) 20%, rgba(10,9,52,1) 24%, rgba(10,9,52,1) 61%);
     border-radius: 8px;

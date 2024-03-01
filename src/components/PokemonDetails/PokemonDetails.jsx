@@ -14,7 +14,7 @@ function PokemonDetails({ pokemonName }) {
     return (
         <>
         <h1 className='pokedex-redirect'>
-            <Link to="/">
+            <Link to="/" style={{ color: 'white', textDecoration: 'none' }}>
                 Pokedex
             </Link>
         </h1>
